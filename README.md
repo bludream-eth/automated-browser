@@ -29,7 +29,7 @@ node index.js
 
 <br/><br/>
 
-**The following code is used to delay the automated actions so you can watch them take place without it moving too fast. This can all be removed if wanted.**
+**The following code (found multiple times throughout) is used to delay the automated actions so you can watch them take place without it moving too fast. This can all be removed if wanted.**
 
 ```js
 await page.waitForTimeout(5000);
