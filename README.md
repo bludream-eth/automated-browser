@@ -1,6 +1,7 @@
 # Automated Web Browsing (via Puppeteer)
 Simple demo for showing how to automate various web browsing functions.
-<br/> <br/>
+
+<br/><br/>
 
 ## Installing Packages
 
@@ -12,16 +13,13 @@ You can run this project on your local machine. Just pull it down and do the fol
 npm i puppeteer
 ```
 
-
 2. Replace [https://www.website.com](https://www.website.com) with the url you wish to visit.
 
 ```js
 await page.goto('https://www.website.com', {waitUntil: 'networkidle2'});
 ```
 
-
 3. Create the actions you wish to be automated.
-
 
 4. Now run automation:
 
