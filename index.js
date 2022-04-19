@@ -18,7 +18,7 @@ let random = Math.floor((Math.random() * 100) + 50);
     });
 
     // Visiting a Webpage
-    await page.goto('https://www.youtube.com', {waitUntil: 'networkidle2'});
+    await page.goto('https://www.website.com', {waitUntil: 'networkidle2'});
 
     // Clicking -> Typing -> Pressing (via XPath)
     await page.waitForTimeout(5000);
