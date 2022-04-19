@@ -43,17 +43,18 @@ let random = Math.floor((Math.random() * 100) + 50);
     await page.waitForTimeout(2000);
     await page.waitForSelector('#logo-icon');
     const selector = await page.$('#logo-icon');
-    await selector.screenshot({path: 'screenshotedSelector.png'});
+    await selector.screenshot({path: 'filename2.png'});
     console.log("Screenshotted");
 
     //Right Click
     await page.waitForTimeout(2000);
     await page.mouse.click(500, 500, {delay: random, button: 'right'});
+    console.log('Right Clicked')
 
     //Close Browser
     await page.waitForTimeout(2000);
     console.log('Browser Closing...')
-    setTimeout(() => {browser.close();}, 1000);
+    setTimeout(async() => {await browser.close();}, 1000);
     setTimeout(() => {console.log("Browser Closed");}, 1500);
 
 })();
