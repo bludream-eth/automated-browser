@@ -22,7 +22,7 @@ let random = Math.floor((Math.random() * 100) + 50);
 
     // Clicking -> Typing -> Pressing (via XPath)
     await page.waitForTimeout(5000);
-    const elements = await page.$x('//*[@id="search-input"]');
+    const elements = await page.$x('');
     await elements[0].click();
     console.log("Clicked");
 
@@ -41,8 +41,8 @@ let random = Math.floor((Math.random() * 100) + 50);
 
     //Screenshot (via Selector)
     await page.waitForTimeout(2000);
-    await page.waitForSelector('#logo-icon');
-    const selector = await page.$('#logo-icon');
+    await page.waitForSelector('');
+    const selector = await page.$('');
     await selector.screenshot({path: 'filename2.png'});
     console.log("Screenshotted");
 
