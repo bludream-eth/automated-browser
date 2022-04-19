@@ -23,7 +23,7 @@ await page.goto('https://www.website.com', {waitUntil: 'networkidle2'});
 
 4. Now run automation:
 
-```js
+```
 node index.js
 ```
 
