@@ -1,11 +1,10 @@
 # Automated Web Browsing (via Puppeteer)
 Simple demo for showing how to automate various web browsing functions.
-
+<br/> <br/>
 
 ## Installing Packages
 
 You can run this project on your local machine. Just pull it down and do the following:
-
 
 1. Run the command below to install the package needed. (Puppeteer)
 
@@ -30,6 +29,15 @@ await page.goto('https://www.website.com', {waitUntil: 'networkidle2'});
 node index.js
 ```
 
+<br/><br/>
+
+**The following code is used to delay the automated actions so you can watch them take place without it moving too fast. This can all be removed if wanted.**
+
+```js
+await page.waitForTimeout(5000);
+```
+
+<br/><br/>
 
 ## MIT Licence
 
